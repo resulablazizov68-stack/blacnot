@@ -1,4 +1,5 @@
 import React from 'react';
+import './Istoria.css'; 
 
 function Istoria({Danie_provalen,Danie_vipilnen}){
     return(
