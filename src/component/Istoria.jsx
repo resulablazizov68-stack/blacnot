@@ -10,9 +10,9 @@ function Istoria({Danie_provalen,Danie_vipilnen}){
                 <h3>Выполненые</h3>
                 {
                     Danie_vipilnen.map((Vipolnen, index) => ( 
-                        <ol key = {index}  > 
+                        <ul key = {index}  > 
                             <li>{Vipolnen}</li> 
-                        </ol> 
+                        </ul> 
                     ))
                 }
 {/*Тут реализована разметка для отображения Проваленые  задачи тут был использован метод мап */}
@@ -20,9 +20,9 @@ function Istoria({Danie_provalen,Danie_vipilnen}){
                     <h3>Проваленые</h3>
                     {
                         Danie_provalen.map((Provalen, index) =>(
-                            <ol key={index}>
+                            <ul key={index}>
                                 <li>{Provalen}</li>
-                            </ol>  
+                            </ul>  
                         ))
                     }
                 </div>

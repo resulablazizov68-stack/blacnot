@@ -63,7 +63,7 @@ useEffect(() => {
       ...prev,
       task,
      
-    ]);
+    ]); 
 
     ydalenei_zadachi(task);
 

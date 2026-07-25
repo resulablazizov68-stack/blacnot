@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./Zapis_del.css"; 
 function Zapis_del({zapis_del}){
     {/*Тут реализована состаяни котороя мы будем писать и наш текс тут будет отображаться */}
     const[text,setText]=useState("");
@@ -7,6 +7,10 @@ function Zapis_del({zapis_del}){
 
     {/*Тут реализована функция котороя будет добавлять задачи в  массив данных */}
     function addTask(){
+        {/*Тут это доработка условия чтобы  пустая строка записи не добавлялось в список задачи */}
+        if(text.trim() === ""){
+            return; 
+        }
         zapis_del(text);
         setText(""); 
     }

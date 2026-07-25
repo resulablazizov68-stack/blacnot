@@ -1,0 +1,95 @@
+/* Контейнер */
+
+.input_zapise_zadache{
+    width: 60%;
+    margin: 40px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+/* Поле ввода */
+
+.input_zapise_zadache input{
+
+    width: 90%;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    border: 2px solid #dcdcdc;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+/* При выборе поля */
+
+.input_zapise_zadache input:focus{
+
+    border-color: #0d6efd;
+
+    box-shadow: 0 0 8px rgba(13,110,253,.3);
+}
+
+/* Кнопка */
+
+.input_zapise_zadache button{
+
+    margin-top: 20px;
+
+    width: 220px;
+
+    padding: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background: #0d6efd;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.input_zapise_zadache button:hover{
+
+    background: #0b5ed7;
+}
+
+/* Отображение текста */
+
+.input_zapise_zadache h3{
+
+    margin-top: 25px;
+
+    color: #444;
+
+    font-size: 22px;
+
+    font-weight: normal;
+
+    text-align: center;
+
+    word-break: break-word;
+}  

@@ -1,4 +1,5 @@
 import {useState}from 'react';
+import './Zadachi.css';
 
 function Zadachi({Zadachi_del,dobavlenie_provalen,dobavlenie_vipolnen }){
     
@@ -17,11 +18,11 @@ function Zadachi({Zadachi_del,dobavlenie_provalen,dobavlenie_vipolnen }){
             <div className='spisok_del'>
                  
                   {Zadachi_del.map((Zadachi,index) => (
-                    <ol key={index}>
+                    <ul key={index}>
                         <li>{Zadachi}</li> 
                         <button onClick= { ()=>addvipolnen(Zadachi)}>Выполнино</button>
                         <button onClick={ ()=>addProvalen(Zadachi)}>Провал</button>    
-                    </ol>
+                    </ul>
                    ))}   
             </div>
         </div>   

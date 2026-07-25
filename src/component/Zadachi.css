@@ -1,0 +1,98 @@
+/* Основной контейнер */
+
+.spisok_del{
+    width: 70%;
+    margin: 30px auto;
+}  
+
+/* Один элемент списка */
+
+.spisok_del ol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    margin-bottom: 18px;
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,.12);
+
+    list-style: none;
+}
+
+/* Текст задачи */
+
+.spisok_del li{
+    flex: 1;
+
+    font-size: 20px;
+
+    color: #333;
+
+    font-weight: 500;
+}
+
+/* Общий стиль кнопок */
+
+.spisok_del button{
+
+    margin-left: 12px;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+/* Выполнено */
+
+.spisok_del button:first-of-type{
+
+    background: #198754;
+
+    color: white;
+}
+
+.spisok_del button:first-of-type:hover{
+
+    background: #157347;
+}
+
+/* Провал */
+
+.spisok_del button:last-of-type{
+
+    background: #dc3545;
+
+    color: white;
+}
+
+.spisok_del button:last-of-type:hover{
+
+    background: #bb2d3b;
+}
+
+/* Эффект карточки */
+
+.spisok_del ol:hover{
+
+    transform: translateY(-3px);
+
+    transition: .3s;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
